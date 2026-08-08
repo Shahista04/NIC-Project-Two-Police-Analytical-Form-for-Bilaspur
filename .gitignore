@@ -1,16 +1,19 @@
 # Dependencies
 node_modules/
-package-lock.json
-
-# Environment variables
 .env
+package-lock.json  # Optional, but recommended
+uploads/           # If you don't want uploads tracked
+=======
+node_modules/
+.env
+package-lock.json  # Optional, but recommended
+uploads/           # If you don't want uploads tracked
+>>>>>>> c0141749d8eb89813a363f0e3e1acdba009db684
+:wq
 
-# Uploads
-uploads/
 
-# IDE files
-.vscode/
-.idea/
-
-# Logs
-*.log
+# Add to .gitignore if not present
+echo "node_modules/" >> .gitignore
+echo ".env" >> .gitignore
+echo "package-lock.json" >> .gitignore
+echo "uploads/" >> .gitignore
